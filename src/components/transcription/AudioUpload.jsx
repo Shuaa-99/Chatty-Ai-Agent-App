@@ -42,10 +42,8 @@ const AudioUpload = ({ onUpload }) => {
       onDragOver={handleDragOver}
       onClick={() => fileInputRef.current.click()}
     >
-      {/* خلفية منقطة */}
       <div className="absolute inset-0 bg-dot-pattern bg-[length:20px_20px] opacity-10 pointer-events-none z-0" />
 
-      {/* المحتوى */}
       <div className="relative z-10 flex flex-col items-center space-y-4">
         <CloudUpload className="w-12 h-12 text-purple-600" />
         <p
