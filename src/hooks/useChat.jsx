@@ -45,7 +45,8 @@ export const useChat = () => {
       const openai = getOpenAIClient(); // ✅ الآن تحصل على الـ API key المحدث
 
       const response = await openai.chat.completions.create({
-        model: "gpt-4o",
+        // model: "gpt-4o",
+        model: "gpt-4-turbo",
         messages: newMessages,
       });
 
