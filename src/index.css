@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Custom Styles for Home Page  */
+
+/* Smooth transition for dark/light mode switching */
+html {
+  scroll-behavior: smooth;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
